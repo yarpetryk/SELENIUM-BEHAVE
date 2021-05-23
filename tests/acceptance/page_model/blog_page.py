@@ -3,7 +3,7 @@ from tests.acceptance.page_model.base_page import BasePage
 
 
 class BlogPage(BasePage):
-    @property  # щоб звертатися як до властивості,а не методу
+    @property
     def url(self):
         return super(BlogPage, self).url + '/blog'
 

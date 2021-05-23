@@ -8,7 +8,7 @@ class BasePage:
     def url(self):
         return 'http://127.0.0.1:5000'
 
-    @property  # щоб звертатися як до властивості,а не методу
+    @property
     def title(self):
         return self.driver.find_element(*BasePageLocators.TITLE)
 
